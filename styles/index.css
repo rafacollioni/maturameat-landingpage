@@ -6,9 +6,10 @@
   --black: #141414;
   --h1: clamp(2.3rem, 3vw, 4rem);
   --h2: clamp(2.1rem, 3.5vw, 3.8rem);
-  --p: clamp(1.5rem, 3vw, 2rem);
+  --p: clamp(1.6rem, 3vw, 2rem);
 }
 
+/* 🌎 GLOBAL ATRIBUTTES 🌎*/
 * {
   padding: 0;
   margin: 0;
@@ -46,6 +47,7 @@ iframe {
 
 .section {
   padding: 10%;
+  outline: green 1px solid;
 }
 
 .fullscreen-section {
@@ -57,15 +59,27 @@ iframe {
   background-color: var(--main-color);
   color: white;
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .main-btn:hover {
   background-color: var(--main-color-hover);
   cursor: pointer;
 }
+
+.margin-auto {
+  display: block;
+  margin: 0 auto;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+/* END OF 🌎 GLOBAL ATRIBUTTES 🌎*/
 
 /* NavBar */
 
@@ -191,7 +205,7 @@ header img {
 
 /* 🖥️ Desktop NavBar 🖥️ */
 
-/* Page Title */
+/* ✨ Page Title Section ✨ */
 
 .page-title {
   padding: 10%;
@@ -211,9 +225,9 @@ header img {
   margin: auto;
 }
 
-/* Page Title */
+/* END OF ✨ Page Title Section ✨ */
 
-/* Section Introdution */
+/* 📝 Section Introdution 📝 */
 
 .section-introduction {
   background-color: var(--main-color);
@@ -222,7 +236,7 @@ header img {
 }
 
 .section-introduction p {
-  font-size: var(--h2);
+  font-size: var(--p);
   margin: 2rem 0;
 }
 
@@ -251,12 +265,20 @@ header img {
   height: 2rem;
 }
 
-/* Section Introdution */
+/* END OF 📝 Section Introdution 📝 */
 
-/* Product Section */
+/* 🥩 Product Section 🥩 */
 .product-section {
   background-color: var(--black);
   color: var(--main-color);
+}
+
+.float-right-image {
+  max-height: 90%;
+  margin: 0 0 0 1.5rem;
+  float: right;
+  max-width: 20rem;
+  max-height: fit-content;
 }
 
 .product-section h2 {
@@ -284,12 +306,26 @@ header img {
 }
 
 .product-image {
-  margin: 0 0 0.5rem 1.5rem;
-  float: right;
-  max-width: 22rem;
+  max-width: 100%;
+  margin: 2.5rem auto;
 }
 
-/* Product Section */
+.font-size-alternated p {
+  text-align: center;
+  font-size: var(--p);
+}
+
+/* 🥩 Product Section 🥩 */
+
+/* Carrousel Section */
+
+.carrousel-section {
+  background-color: var(--main-color);
+}
+
+.carrousel {
+  max-width: 100%;
+}
 
 /* 🖥️Media Query para Desktop🖥️ */
 @media (min-width: 767px) {
@@ -306,11 +342,13 @@ header img {
     padding: 4% 20%;
   }
   .section {
-    padding: 5% 20%;
+    padding: 5% 25%;
   }
   .lista-vantagens {
     margin: 0 auto;
-    padding: 5%;
     align-items: center;
+  }
+  .product-image {
+    max-width: 80%;
   }
 }

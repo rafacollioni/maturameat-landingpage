@@ -13,3 +13,5 @@ menu_btn.addEventListener('click', function menuToggle() {
   menu_btn.classList.toggle('is-active');
   mobile_nav.classList.toggle('is-active');
 });
+
+// Carrousel
