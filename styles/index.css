@@ -323,10 +323,6 @@ header img {
   background-color: var(--main-color);
 }
 
-.carrousel {
-  max-width: 100%;
-}
-
 /* 🖥️Media Query para Desktop🖥️ */
 @media (min-width: 767px) {
   .desktop-nav {
