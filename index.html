@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <script defer src="index.js"></script>
     <title>MaturaMeat</title>
   </head>
@@ -133,12 +134,47 @@
       </section>
       <!-- 🥩 Third Product Section 🥩 -->
       <section class="section carrousel-section grid-center">
-        <h2>
-          Nada melhor<br />
-          do que escutar quem já usa
-        </h2>
-        <h3>Veja o que nossos clientes tem a dizer sobre nós:</h3>
+        <div class="carousel-header">
+          <h2>Nada melhor do que escutar quem já usa</h2>
+          <h3>Veja o que nossos clientes tem a dizer sobre nós:</h3>
+        </div>
+        <!-- Carousel -->
+        <div class="carousel">
+          <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked" />
+            <div class="carousel-item">
+              <img src="./assets/charcutaria-stock-image.jpg" />
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
+            <div class="carousel-item">
+              <img src="./assets/fish-stock-image.jpg" />
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
+            <div class="carousel-item">
+              <img src="./assets/charcutaria-stock-image.jpg" />
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-3">›</label>
+            <ol class="carousel-indicators">
+              <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- Carousel -->
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   </body>
 </html>
