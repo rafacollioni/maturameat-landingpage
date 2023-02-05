@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <script defer src="index.js"></script>
+
     <title>MaturaMeat</title>
   </head>
   <body>
@@ -85,7 +86,7 @@
       <section class="grid-center section product-section">
         <div>
           <h2>DRY AGED</h2>
-          <div class="product-wrapper">
+          <div class="product-wrapper-float">
             <img class="float-right-image" src="../assets/stock-image.jpg" />
             <p>Feita para carnes em geral, mas muito utilizada hoje para bovinos, suínos e caprinos.</p>
             <br />
@@ -99,7 +100,7 @@
       <!--🥩 Product Section 🥩 -->
 
       <!-- 🥩 Second Product Section 🥩 -->
-      <section class="grid-center section product-section font-size-alternated">
+      <section class="grid-center section fullscreen-section product-section font-size-alternated">
         <div>
           <div class="product-wrapper">
             <h2>DRY FISH</h2>
@@ -117,7 +118,7 @@
       <!-- 🥩 Second Product Section 🥩 -->
 
       <!-- 🥩 Third Product Section 🥩 -->
-      <section class="grid-center section product-section font-size-alternated">
+      <section class="grid-center section fullscreen-section product-section font-size-alternated">
         <div>
           <div class="product-wrapper">
             <h2>CHARCUTARIA</h2>
@@ -133,48 +134,54 @@
         </div>
       </section>
       <!-- 🥩 Third Product Section 🥩 -->
+
+      <!-- 🖼️ Carrousel Section 🖼️ -->
       <section class="section carrousel-section grid-center">
         <div class="carousel-header">
           <h2>Nada melhor do que escutar quem já usa</h2>
           <h3>Veja o que nossos clientes tem a dizer sobre nós:</h3>
         </div>
         <!-- Carousel -->
-        <div class="carousel">
-          <div class="carousel-inner">
-            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked" />
-            <div class="carousel-item">
-              <img src="./assets/charcutaria-stock-image.jpg" />
-            </div>
-            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
-            <div class="carousel-item">
-              <img src="./assets/fish-stock-image.jpg" />
-            </div>
-            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
-            <div class="carousel-item">
-              <img src="./assets/charcutaria-stock-image.jpg" />
-            </div>
-            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-            <label for="carousel-2" class="carousel-control next control-1">›</label>
-            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-            <label for="carousel-3" class="carousel-control next control-2">›</label>
-            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-            <label for="carousel-1" class="carousel-control next control-3">›</label>
-            <ol class="carousel-indicators">
-              <li>
-                <label for="carousel-1" class="carousel-bullet">•</label>
-              </li>
-              <li>
-                <label for="carousel-2" class="carousel-bullet">•</label>
-              </li>
-              <li>
-                <label for="carousel-3" class="carousel-bullet">•</label>
-              </li>
-            </ol>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./assets/charcutaria-stock-image.jpg" /></div>
+            <div class="swiper-slide"><img src="./assets/charcutaria-stock-image.jpg" /></div>
+            <div class="swiper-slide"><img src="./assets/fish-stock-image.jpg" /></div>
+            ...
           </div>
+          <!--Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Next and Prev Buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
+
         <!-- Carousel -->
       </section>
+      <!-- 🖼️ Carrousel Section 🖼️ -->
+
+      <!-- 📞 Form Section 📞 -->
+      <section class="section form-section grid-center">
+        <h2>Fale com a Gente!</h2>
+        <p>Deixe seu nome e número de telefone para que nosso time possa entrar em contato e tirar todas as suas dúvidas.</p>
+        <p>Se preferir, envie uma mensagem agora mesmo em nosso Whatsapp, e responderemos o mais breve possível:</p>
+        <form>
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Nome" />
+          <label for="phone-number"></label>
+          <input type="tel" name="phone-number" placeholder="(DDD) + Número" />
+          <button class="main-btn" type="submit">ENVIAR</button>
+        </form>
+      </section>
+      <!-- 📞 Form Section 📞 -->
+      <section class="section bio-section grid-center fullscreen-section">
+        <div>
+          <h3>Com a palavra, nosso fundador:</h3>
+          <h2>Sandro Giovannone</h2>
+        </div>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
