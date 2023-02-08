@@ -22,8 +22,8 @@
         <ul>
           <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#home">HOME</a></li>
           <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#sobre">SOBRE NÓS</a></li>
-          <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#videos">CÂMARAS</a></li>
-          <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#sobre">CONTATO</a></li>
+          <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#dry-aged">CÂMARAS</a></li>
+          <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#contato">CONTATO</a></li>
         </ul>
       </nav>
       <!-- 📱 Mobile NavBar 📱  -->
@@ -32,8 +32,8 @@
         <ul>
           <li class="nav-item"><a class="nav-anchor" href="#home">HOME</a></li>
           <li class="nav-item"><a class="nav-anchor" href="#sobre">SOBRE NÓS</a></li>
-          <li class="nav-item"><a class="nav-anchor" href="#videos">CÂMARAS</a></li>
-          <li class="nav-item"><a class="nav-anchor" href="#sobre">CONTATO</a></li>
+          <li class="nav-item"><a class="nav-anchor" href="#dry-aged">CÂMARAS</a></li>
+          <li class="nav-item"><a class="nav-anchor" href="#contato">CONTATO</a></li>
         </ul>
       </nav>
       <!-- 🖥️ Desktop NavBar 🖥️  -->
@@ -45,7 +45,7 @@
         <br />
         <h2>Conheça e escolha a máquina perfeita para o seu restaurante.</h2>
         <br />
-        <a href="#">
+        <a class="arrow-down" href="#dry-aged">
           <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
             <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
           </svg>
@@ -54,7 +54,7 @@
       <!--✨ Page Title Section ✨ -->
 
       <!-- 📝 Introduction Section 📝 -->
-      <section class="section section-introduction">
+      <section id="sobre" class="section section-introduction">
         <h2>REFERÊNCIA EM<br />maturação no Brasil</h2>
         <p>
           Matura Meat®
@@ -83,7 +83,7 @@
       <!-- 📝 Introduction Section 📝 -->
 
       <!--🥩 Product Section 🥩 -->
-      <section class="grid-center section product-section">
+      <section id="dry-aged" class="grid-center section product-section">
         <div>
           <h2>DRY AGED</h2>
           <div class="product-wrapper-float">
@@ -162,10 +162,9 @@
       <!-- 🖼️ Carrousel Section 🖼️ -->
 
       <!-- 📞 Form Section 📞 -->
-      <section class="section form-section grid-center">
+      <section id="contato" class="section form-section grid-center">
         <h2>Fale com a Gente!</h2>
         <p>Deixe seu nome e número de telefone para que nosso time possa entrar em contato e tirar todas as suas dúvidas.</p>
-        <p>Se preferir, envie uma mensagem agora mesmo em nosso Whatsapp, e responderemos o mais breve possível:</p>
         <form>
           <label for="name"></label>
           <input type="text" id="name" name="name" placeholder="Nome" />
@@ -173,14 +172,45 @@
           <input type="tel" name="phone-number" placeholder="(DDD) + Número" />
           <button class="main-btn" type="submit">ENVIAR</button>
         </form>
-      </section>
-      <!-- 📞 Form Section 📞 -->
-      <section class="section bio-section grid-center fullscreen-section">
-        <div>
-          <h3>Com a palavra, nosso fundador:</h3>
-          <h2>Sandro Giovannone</h2>
+        <div class="whatsapp-section">
+          <p>Se preferir, envie uma mensagem agora mesmo em nosso Whatsapp, e responderemos o mais breve possível:</p>
+          <button class="main-btn whatsapp">
+            <img class="whatsapp-button-icon" src="./assets/whatsapp-icon.png" />
+            Fale Conosco
+          </button>
         </div>
       </section>
+      <!-- 📞 Form Section 📞 -->
+      <section class="section fullscreen-section bio-section grid-center fullscreen-section">
+        <div>
+          <h3>Com a palavra, nosso fundador:</h3>
+          <h2>SANDRO GIOVANNONE</h2>
+        </div>
+        <div class="bio-wrapper">
+          <img src="./assets/avatar-placeholder.jpg" class="bio-pic" />
+          <p class="bio">
+            Em 2010 eu me apaixonei por uma vitrine de cames dry aged no aeroporto de NY. No Brasil ainda não se falava muito disso. Desenvolvi um equipamento improvisado pra fazer meus experimentos. Os resultados foram ótimos, a care se transformava, o sabor era maravilhoso. 5 anos depois entramos
+            de cabeça na comercialização de equipamentos profissionais maturação a seco de proteinas, conseguimos a primeira patente da América Latina. Hoje vendemos para todo o Brasil e queremos mais. Nossas câmaras atendem a diferentes segmentos: dry age de carnes, dry fish, charcutaria e até
+            mesmo laticinios. para Agregamos valor aos produtos dos nossos clientes, baixamos custos com desperdicio e mão de obra e garantimos segurança alimentar pra quem produz e quem consome.
+          </p>
+        </div>
+      </section>
+
+      <footer class="section footer">
+        <img class="footer-logo" src="./assets/logo_spazio_footer.png" alt="Spazio Lab Logo" />
+        <div class="social-icons">
+          <img src="./assets/youtube-icon.png" alt="youtube-icon" />
+          <img src="./assets/facebook-icon.png" alt="facebook-icon" />
+          <img src="./assets/instagram-icon.png" alt="instagram-icon" />
+        </div>
+        <p>Matura Meat® é uma empresa do grupo <a href="http://spaziolaboratorio.com.br/">Spazio Lab.</a></p>
+        <address><strong>sandro@spaziolaboratorio.com.br</strong></address>
+
+        <address>
+          <p>(11) 93301-9166</p>
+          Rua Engenho Araci, 559 - VI. Gumercindo - São Paulo/SP
+        </address>
+      </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>

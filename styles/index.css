@@ -16,6 +16,7 @@
   margin: 0;
   box-sizing: border-box;
   border: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -67,7 +68,9 @@ iframe {
 
 .main-btn:hover {
   background-color: var(--main-color-hover);
+  transition: 300ms ease-in-out;
   cursor: pointer;
+  transform: scale(1.03);
 }
 
 .margin-auto {
@@ -226,6 +229,11 @@ header img {
   margin: auto;
 }
 
+.arrow-down:hover {
+  color: #870e1e;
+  transition: 300ms ease-in-out;
+  transform: scale(1.03);
+}
 /* END OF ✨ Page Title Section ✨ */
 
 /* 📝 Section Introdution 📝 */
@@ -365,20 +373,23 @@ header img {
 
 .form-section {
   background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .form-section p {
   font-size: var(--p);
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 0 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   width: 100%;
   align-items: center;
+  gap: 2rem;
 }
 
 form input {
@@ -392,7 +403,38 @@ form input::placeholder {
 }
 
 form input:focus {
+  transition: 300ms ease;
   outline: var(--main-color-hover) solid 3px;
+}
+
+.form-section button {
+  width: 50%;
+  margin: 0;
+}
+
+.whatsapp-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.whatsapp {
+  background-color: #0da444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.whatsapp:hover {
+  background-color: #136f32;
+  transform: scale(1.03);
+}
+
+.whatsapp-button-icon {
+  height: 15px;
+  filter: invert();
+  display: block;
 }
 /* END OF 📞 Form Section 📞 */
 
@@ -400,6 +442,58 @@ form input:focus {
 
 .bio-section {
   background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.bio-section h2,
+.bio-section h3 {
+  text-align: center;
+}
+
+.bio-wrapper {
+  background: var(--black);
+  padding: 7%;
+  border-radius: 5px;
+}
+
+.bio-pic {
+  width: 16rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  display: block;
+  border-radius: 50%;
+  border: var(--main-color) 3px solid;
+}
+
+.bio {
+  font-size: clamp(1rem, 3vw, 1.8rem);
+  text-align: justify;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--main-color);
+  font-size: clamp(1rem, 3vw, 1.8rem);
+}
+
+.footer-logo {
+  width: 20%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icons > * {
+  max-height: 2.5rem;
 }
 
 /* 🖥️Media Query para Desktop🖥️ */
@@ -432,5 +526,8 @@ form input:focus {
   }
   .swiper {
     max-width: 70%;
+  }
+  .bio-wrapper {
+    padding: 5%;
   }
 }
