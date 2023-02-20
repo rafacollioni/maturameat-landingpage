@@ -294,7 +294,7 @@ header img {
   max-height: 90%;
   margin: 0 0 0 1.5rem;
   float: right;
-  max-width: 20rem;
+  max-width: 23rem;
   max-height: fit-content;
 }
 
@@ -491,6 +491,9 @@ form input:focus {
 }
 
 /* Footer */
+.link:hover {
+  color: #d2d2d2;
+}
 
 .footer {
   display: flex;
