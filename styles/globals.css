@@ -6,8 +6,9 @@
   --black: #141414;
   --grey: #767676;
   --h1: clamp(2.3rem, 3vw, 3rem);
-  --h2: clamp(2.1rem, 3.5vw, 2.5rem);
+  --h2: clamp(2rem, 2.8vw, 2.4rem);
   --p: clamp(1.6rem, 2.7vw, 1.8rem);
+  --big-title: clamp(2.1rem, 3.5vw, 2.5rem);
 }
 
 /* 🌎 GLOBAL ATRIBUTTES 🌎*/
@@ -49,7 +50,7 @@ iframe {
 
 .section {
   padding: 10%;
-  outline: white 1px solid;
+  outline: white 0.5px solid;
 }
 
 .fullscreen-section {
@@ -58,6 +59,8 @@ iframe {
 
 .main-btn {
   display: block;
+  font-size: 1.2rem;
+  text-align: center;
   background-color: var(--main-color);
   color: white;
   font-weight: 600;

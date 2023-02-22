@@ -1,41 +1,58 @@
+.header {
+  padding: 0 10%;
+  background-color: var(--main-color);
+  height: 14vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.header img {
+  height: 40%;
+  flex-grow: 1;
+}
+
+.header a {
+  display: block;
+}
+.header a svg {
+  height: 4.5rem;
+  transition: all 500ms;
+  display: block;
+}
+
+.header a svg:hover {
+  transform: scale(1.05);
+}
 /* ✨ Page Title Section ✨ */
 
 .page-title {
+  padding: 10%;
   line-height: 1.5;
-  background-image: url('../assets/title-section-background.png');
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('../assets/title-section-background-2.jpg') no-repeat center;
   background-size: cover;
   color: white;
 }
 
 .page-title h2 {
   font-weight: 400;
+  font-size: var(--p);
 }
 
-.arrow-down {
-  display: block;
-  width: 9rem;
-  stroke-width: 40px;
-  margin: auto;
-  transition: all 300ms ease-in-out;
-}
-
-.arrow-down:hover {
-  color: var(--main-color);
-  transform: scale(1.03);
+.page-title button {
+  margin-left: 0;
 }
 /* END OF ✨ Page Title Section ✨ */
 
-/* 📝 Section Introdution 📝 */
-
-.section-introduction {
-  background-color: var(--main-color);
+.section-introduction-caracteristicas {
+  background-color: var(--black);
   text-align: center;
   line-height: 1.4;
 }
 
-.section-introduction p {
+.section-introduction-caracteristicas p {
   font-size: var(--p);
   margin: 2rem 0;
 }
@@ -44,12 +61,10 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  background-color: white;
-  color: black;
-  font-weight: 600;
+  color: white;
   font-size: clamp(1rem, 3.5vw, 2rem);
   text-align: left;
-  padding: 10%;
+  padding: 5%;
   border-radius: 2rem;
   list-style: none;
 }
@@ -57,15 +72,13 @@
 .item-vantagens {
   align-items: flex-start;
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
-.section-introduction img {
+.section-introduction-caracteristicas img {
   width: 2rem;
   height: 2rem;
 }
-
-/* END OF 📝 Section Introdution 📝 */
 
 /* 🥩 Product Section 🥩 */
 .product-section {
@@ -73,25 +86,11 @@
   color: var(--main-color);
 }
 
-.dry-fish-section {
-  background-image: url('../assets/background-texture-1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.charcutaria-section {
-  background-image: url('../assets/background-texture-2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .float-right-image {
   max-height: 90%;
   margin: 0 0 0 1.5rem;
   float: right;
-  max-width: 22rem;
+  max-width: 20rem;
   max-height: fit-content;
 }
 
@@ -103,7 +102,7 @@
 .product-section h2::after {
   content: '';
   display: block;
-  background-color: var(--main-color);
+  background-color: #690311;
   width: 70%;
   height: 5px;
   margin: 0 auto;
@@ -132,10 +131,36 @@
 
 /* 🥩 Product Section 🥩 */
 
+/* Product Advantages Section */
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+}
+
+.advantages-list h2 {
+  margin-bottom: 5%;
+}
+
+.advantages-list ul {
+  list-style: square;
+  font-size: var(--p);
+  width: 90%;
+}
+
+.advantages-list ul li {
+  margin: 2rem 0;
+}
+
+/* Product Advantages Section */
+
 /* 🖼️ Carrousel Section 🖼️ */
 
 .carrousel-section {
-  background-color: var(--main-color);
+  background-color: var(--black);
   text-align: center;
 }
 
@@ -174,87 +199,50 @@
 
 /* END OF 🖼️ Carrousel Section 🖼️ */
 
-/* 📞 Form Section 📞 */
-
-.form-section {
+/* Comparative Section */
+.comparative-section-before {
   background-color: var(--black);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
-.form-section p {
+.comparative-section-after {
+  background-color: var(--main-color-hover);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.comparative-section-before h2,
+.comparative-section-after h2 {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.comparative-section-before ul li,
+.comparative-section-after ul li {
+  font-size: var(--p);
+  margin: 1rem 0;
+}
+
+/* END OF Comparative Section */
+
+/* About Section */
+.section-introduction {
+  background-color: var(--main-color);
+}
+
+.section-introduction img {
+  max-width: 40%;
+  margin: 0 auto 10% auto;
+  display: block;
+}
+
+.section-introduction p {
   font-size: var(--p);
   text-align: center;
-  margin: 0 0;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-form::after {
-  content: '';
-  display: block;
-  width: 60%;
-  height: 1px;
-  background-color: #ffff;
-}
-
-form input {
-  width: 90%;
-  padding: 1.5rem 2rem;
-  border-radius: 1rem;
-  transition: all 300ms ease;
-}
-
-form input::placeholder {
-  color: black;
-}
-
-form input:focus {
-  outline: var(--main-color-hover) solid 3px;
-}
-
-.form-section button {
-  width: 50%;
-  margin-top: 1rem;
-}
-
-.whatsapp-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.whatsapp {
-  width: 50%;
-  font-size: 1.2rem;
-  text-decoration: none;
-  background-color: #0da444;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-.whatsapp:hover {
-  background-color: #136f32;
-  transform: scale(1.03);
-}
-
-.whatsapp-button-icon {
-  height: 15px;
-  filter: invert();
-  display: block;
-}
-/* END OF 📞 Form Section 📞 */
-
+/* END OF About Section */
 /* Bio Section */
 
 .bio-section {
@@ -265,9 +253,9 @@ form input:focus {
   gap: 1.5rem;
 }
 
-.bio-section h2,
-.bio-section h3 {
+.bio-section h2 {
   text-align: center;
+  font-size: var(--big-title);
 }
 
 .bio-wrapper {
@@ -290,16 +278,57 @@ form input:focus {
   text-align: justify;
 }
 
-/* Footer */
-.link:hover {
-  color: #d2d2d2;
+/* FAQ SECTION */
+
+.faq-section {
+  background-color: var(--offwhite);
 }
+.faq-section h2 {
+  font-size: var(--big-title);
+  color: var(--main-color);
+}
+
+details {
+  color: var(--black);
+  font-size: var(--p);
+  margin: 2rem 0;
+}
+
+summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  content: '\002B';
+  color: var(--main-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+details[open] summary:after {
+  content: '\00D7';
+  color: var(--main-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+details[open] div {
+  margin: 1rem 0;
+}
+/* Footer */
 
 .footer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  background: var(--main-color);
+  background: var(--black);
   font-size: clamp(1rem, 3vw, 1.8rem);
 }
 
@@ -322,6 +351,7 @@ form input:focus {
   transform: scale(1.03);
 }
 
+/* 🖥️Media Query para Desktop🖥️ */
 @media (min-width: 767px) {
   .desktop-nav {
     display: block;
@@ -333,16 +363,17 @@ form input:focus {
     display: none;
   }
   .page-title {
-    padding: 4% 20%;
+    padding: 3% 25%;
   }
   .section {
     padding: 3% 25%;
   }
   .lista-vantagens {
     margin: 0 auto;
+    /* align-items: center; */
   }
   .product-image {
-    max-width: 55%;
+    max-width: 65%;
   }
   .main-btn {
     width: 60%;
@@ -353,8 +384,5 @@ form input:focus {
   }
   .bio-wrapper {
     padding: 5%;
-  }
-  .form-section button {
-    width: 60%;
   }
 }
