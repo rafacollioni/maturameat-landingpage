@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <script defer src="index.js"></script>
-
     <title>MaturaMeat</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <img src="../assets/MaturaMeat Logo.svg" alt="MaturaMeat NavBar" class="logo" />
       <button class="hamburguer">
         <div class="bar"></div>
@@ -20,27 +20,43 @@
       <!-- 📱 Mobile NavBar 📱  -->
       <nav class="mobile-nav is-active">
         <ul>
-          <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#home">HOME</a></li>
-          <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#sobre">SOBRE NÓS</a></li>
-          <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#dry-aged">CÂMARAS</a></li>
-          <li class="nav-item-mobile"><a class="nav-anchor-mobile" href="#contato">CONTATO</a></li>
+          <li class="nav-item-mobile">
+            <a class="nav-anchor-mobile" href="#home">HOME</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a class="nav-anchor-mobile" href="#sobre">SOBRE NÓS</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a class="nav-anchor-mobile" href="#dry-aged">CÂMARAS</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a class="nav-anchor-mobile" href="#contato">CONTATO</a>
+          </li>
         </ul>
       </nav>
       <!-- 📱 Mobile NavBar 📱  -->
       <!-- 🖥️ Desktop NavBar 🖥️  -->
       <nav class="desktop-nav">
         <ul>
-          <li class="nav-item"><a class="nav-anchor" href="#home">HOME</a></li>
-          <li class="nav-item"><a class="nav-anchor" href="#sobre">SOBRE NÓS</a></li>
-          <li class="nav-item"><a class="nav-anchor" href="#dry-aged">CÂMARAS</a></li>
-          <li class="nav-item"><a class="nav-anchor" href="#contato">CONTATO</a></li>
+          <li class="nav-item">
+            <a class="nav-anchor" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-anchor" href="#sobre">SOBRE NÓS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-anchor" href="#dry-aged">CÂMARAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-anchor" href="#contato">CONTATO</a>
+          </li>
         </ul>
       </nav>
       <!-- 🖥️ Desktop NavBar 🖥️  -->
     </header>
     <main>
       <!--✨ Page Title Section ✨ -->
-      <section class="page-title">
+      <section class="page-title section">
         <h1>Câmaras de maturação a seco de proteínas para dry aged, dry fish e charcutaria.</h1>
         <br />
         <h2>Conheça e escolha a máquina perfeita para o seu restaurante.</h2>
@@ -100,7 +116,7 @@
       <!--🥩 Product Section 🥩 -->
 
       <!-- 🥩 Second Product Section 🥩 -->
-      <section class="grid-center section fullscreen-section product-section font-size-alternated">
+      <section class="dry-fish-section grid-center section fullscreen-section product-section font-size-alternated">
         <div>
           <div class="product-wrapper">
             <h2>DRY FISH</h2>
@@ -118,7 +134,7 @@
       <!-- 🥩 Second Product Section 🥩 -->
 
       <!-- 🥩 Third Product Section 🥩 -->
-      <section class="grid-center section fullscreen-section product-section font-size-alternated">
+      <section class="charcutaria-section grid-center section fullscreen-section product-section font-size-alternated">
         <div>
           <div class="product-wrapper">
             <h2>CHARCUTARIA</h2>
@@ -165,11 +181,11 @@
       <section id="contato" class="section form-section grid-center">
         <h2>Fale com a Gente!</h2>
         <p>Deixe seu nome e número de telefone para que nosso time possa entrar em contato e tirar todas as suas dúvidas.</p>
-        <form>
-          <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Nome" />
-          <label for="phone-number"></label>
-          <input type="tel" name="phone-number" placeholder="(DDD) + Número" />
+        <form action="https://sheetdb.io/api/v1/3qk3699v7wfg7" method="post" id="sheetdb-form">
+          <label for="nome"></label>
+          <input type="text" id="nome" name="data[nome]" placeholder="Nome" />
+          <label for="tel"></label>
+          <input type="tel" id="tel" name="data[tel]" placeholder="(DDD) + Número" onkeydown="phoneNumberFormatter()" />
           <button class="main-btn" type="submit">ENVIAR</button>
         </form>
         <div class="whatsapp-section">
@@ -209,7 +225,9 @@
         </address>
 
         <address>
-          <p><a class="link" href="tel:11933019166">(11) 93301-9166</a></p>
+          <p>
+            <a class="link" href="tel:11933019166">(11) 93301-9166</a>
+          </p>
           <br />
           <a class="link" target="_blank" href="https://www.google.com.br/maps/place/Spazio+Laboratorio/@-23.6077229,-46.6136433,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5bec6863ca25:0xfde6726b8651747e!8m2!3d-23.6077229!4d-46.6136433!16s%2Fg%2F11gd_kgkpq?coh=164777&entry=tt">
             Rua Engenho Araci, 559 - VI. Gumercindo - São Paulo/SP</a

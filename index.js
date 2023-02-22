@@ -31,3 +31,32 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// Formulário
+
+let form = document.getElementById('sheetdb-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(document.getElementById('sheetdb-form')),
+  })
+    .then((response) => console.log('Formulário Enviado com Sucesso!'))
+    .then(() => location.reload());
+});
+
+function formatPhoneNumber(value) {
+  if (!value) return value;
+  const phoneNumber = value.replace(/[^\d]/g, '');
+  const phoneNumberLength = phoneNumber.length;
+  if (phoneNumberLength < 9) return phoneNumber;
+  if (phoneNumberLength < 9) {
+    return `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2)}`;
+  }
+  return `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2, 7)}-${phoneNumber.slice(7, 10)}`;
+}
+function phoneNumberFormatter() {
+  const inputField = document.getElementById('tel');
+  const formattedInputValue = formatPhoneNumber(inputField.value);
+  inputField.value = formattedInputValue;
+}
