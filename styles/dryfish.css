@@ -351,7 +351,6 @@ details[open] div {
   transform: scale(1.03);
 }
 
-/* 🖥️Media Query para Desktop🖥️ */
 @media (min-width: 767px) {
   .desktop-nav {
     display: block;
