@@ -348,6 +348,13 @@ form input:focus {
     width: 60%;
     font-size: 1.7rem;
   }
+  .anchor-main-btn {
+    width: 60%;
+    font-size: 1.7rem;
+  }
+  .dry-aged-button {
+    margin: 2rem 0;
+  }
   .swiper {
     max-width: 70%;
   }

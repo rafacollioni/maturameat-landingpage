@@ -102,7 +102,7 @@
 .product-section h2::after {
   content: '';
   display: block;
-  background-color: #690311;
+  background-color: var(--main-color);
   width: 70%;
   height: 5px;
   margin: 0 auto;
@@ -363,26 +363,35 @@ details[open] div {
     display: none;
   }
   .page-title {
-    padding: 3% 25%;
+    padding: 4% 20%;
   }
   .section {
     padding: 3% 25%;
   }
   .lista-vantagens {
     margin: 0 auto;
-    /* align-items: center; */
   }
   .product-image {
-    max-width: 65%;
+    max-width: 55%;
   }
   .main-btn {
     width: 60%;
     font-size: 1.7rem;
+  }
+  .anchor-main-btn {
+    width: 60%;
+    font-size: 1.7rem;
+  }
+  .dry-aged-button {
+    margin: 2rem 0;
   }
   .swiper {
     max-width: 70%;
   }
   .bio-wrapper {
     padding: 5%;
+  }
+  .form-section button {
+    width: 60%;
   }
 }

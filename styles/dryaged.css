@@ -351,7 +351,6 @@ details[open] div {
   transform: scale(1.03);
 }
 
-/* 🖥️Media Query para Desktop🖥️ */
 @media (min-width: 767px) {
   .desktop-nav {
     display: block;
@@ -363,26 +362,35 @@ details[open] div {
     display: none;
   }
   .page-title {
-    padding: 3% 25%;
+    padding: 4% 20%;
   }
   .section {
     padding: 3% 25%;
   }
   .lista-vantagens {
     margin: 0 auto;
-    /* align-items: center; */
   }
   .product-image {
-    max-width: 65%;
+    max-width: 55%;
   }
   .main-btn {
     width: 60%;
     font-size: 1.7rem;
+  }
+  .anchor-main-btn {
+    width: 60%;
+    font-size: 1.7rem;
+  }
+  .dry-aged-button {
+    margin: 2rem 0;
   }
   .swiper {
     max-width: 70%;
   }
   .bio-wrapper {
     padding: 5%;
+  }
+  .form-section button {
+    width: 60%;
   }
 }
