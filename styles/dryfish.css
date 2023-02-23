@@ -381,16 +381,10 @@ details[open] div {
     width: 60%;
     font-size: 1.7rem;
   }
-  .dry-aged-button {
-    margin: 2rem 0;
-  }
   .swiper {
     max-width: 70%;
   }
   .bio-wrapper {
     padding: 5%;
-  }
-  .form-section button {
-    width: 60%;
   }
 }

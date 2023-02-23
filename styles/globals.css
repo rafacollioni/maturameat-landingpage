@@ -86,7 +86,7 @@ iframe {
   font-weight: 600;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
-  margin: 2rem auto;
+  margin: 4rem auto;
   transition: all 300ms ease-in-out;
 }
 
@@ -238,3 +238,26 @@ iframe {
 }
 
 /* 🖥️ Desktop NavBar 🖥️ */
+
+@media (min-width: 767px) {
+  .desktop-nav {
+    display: block;
+  }
+  .hamburguer {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .section {
+    padding: 3% 25%;
+  }
+  .main-btn {
+    width: 60%;
+    font-size: 1.7rem;
+  }
+  .anchor-main-btn {
+    width: 60%;
+    font-size: 1.7rem;
+  }
+}
