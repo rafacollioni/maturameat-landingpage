@@ -125,7 +125,7 @@ iframe {
 }
 
 .header img {
-	height: 40%;
+	height: 4rem;
 }
 
 .nav-anchor:hover,
@@ -247,17 +247,24 @@ iframe {
 .map-section h2 {
 	font-size: var(--h1);
 }
+
 .map-section h3 {
 	font-size: var(--h2);
 	margin: 0.6rem 0;
 }
 .map-section p {
 	font-size: var(--p);
+}
+
+.map-section > * {
 	text-align: center;
 }
 /* 🖥️ Desktop NavBar 🖥️ */
 
 @media (min-width: 767px) {
+	.fullscreen-section {
+		min-height: auto;
+	}
 	.desktop-nav {
 		display: block;
 	}
