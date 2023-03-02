@@ -1,248 +1,450 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="../styles/index.css" />
-    <script defer src="index.js"></script>
-    <title>MaturaMeat - Referência em Maturação no Brasil</title>
-  </head>
-  <body>
-    <header class="header">
-      <img src="../assets/MaturaMeat Logo.svg" alt="MaturaMeat NavBar" class="logo" />
-      <button class="hamburguer">
-        <div class="bar"></div>
-      </button>
-      <!-- 📱 Mobile NavBar 📱  -->
-      <nav class="mobile-nav is-active">
-        <ul>
-          <li class="nav-item-mobile">
-            <a class="nav-anchor-mobile" href="#home">HOME</a>
-          </li>
-          <li class="nav-item-mobile">
-            <a class="nav-anchor-mobile" href="#sobre">SOBRE NÓS</a>
-          </li>
-          <li class="nav-item-mobile">
-            <a class="nav-anchor-mobile" href="#dry-aged">CÂMARAS</a>
-          </li>
-          <li class="nav-item-mobile">
-            <a class="nav-anchor-mobile" href="#contato">CONTATO</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- 📱 Mobile NavBar 📱  -->
-      <!-- 🖥️ Desktop NavBar 🖥️  -->
-      <nav class="desktop-nav">
-        <ul>
-          <li class="nav-item">
-            <a class="nav-anchor" href="#home">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-anchor" href="#sobre">SOBRE NÓS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-anchor" href="#dry-aged">CÂMARAS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-anchor" href="#contato">CONTATO</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- 🖥️ Desktop NavBar 🖥️  -->
-    </header>
-    <main>
-      <div class="go-up-button"></div>
-      <!--✨ Page Title Section ✨ -->
-      <section class="page-title section">
-        <h1>Câmaras de maturação a seco de proteínas para dry aged, dry fish e charcutaria.</h1>
-        <br />
-        <h2>Conheça e escolha a máquina perfeita para o seu restaurante.</h2>
-        <br />
-        <a class="arrow-down" href="#dry-aged">
-          <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
-          </svg>
-        </a>
-      </section>
-      <!--✨ Page Title Section ✨ -->
+	<head>
+		<meta charset="UTF-8" />
 
-      <!-- 📝 Introduction Section 📝 -->
-      <section id="sobre" class="section section-introduction">
-        <h2>REFERÊNCIA EM<br />maturação no Brasil</h2>
-        <p>
-          Matura Meat®
-          <br />
-          <br />
-          Produzimos equipamentos que garantem a você perfeitas condições de umidade, temperatura e ventilação durante a maturação dos seus produtos, como: carnes, peixes, embutidos, queijos, salames,
-          copas, presuntos, entre outros. A Matura Meat® é a primeira câmara de maturação a seco de proteínas do Brasil e a única em toda América Latina com patente registrada. Entregamos em todo o
-          Brasil. Você recebe a câmara de maturação com manual completo de instalação e uma assessoria com o maior especialista do Brasil nos primeiros 45 dias de uso.
-        </p>
-        <br />
-        <ul class="lista-vantagens">
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Aumenta o valor agregado dos seus produtos</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Realça o sabor e melhora a textura das suas proteínas</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Garante segurança alimentar</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Reduz desperdício com perdas de produção</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Reduz gastos com mão de obra</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />572L de capacidade de armazenamento</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Controlador de temperatura</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Controlador de umidade</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Controlador de ventilação</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Ventilação com ar forçado</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Padrozinar a sua produção</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Disponível somente na cor preta</li>
-          <li class="item-vantagens"><img src="../assets/checkbox.png" class="checkbox" />Pagamento seguro</li>
-        </ul>
-      </section>
-      <!-- 📝 Introduction Section 📝 -->
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="robots"
+			content="index,follow" />
+		<meta
+			name="description"
+			content="Produzimos equipamentos que garantem a você perfeitas condições de umidade, temperatura e ventilação durante a maturação dos seus produtos, como: carnes, peixes, embutidos, queijos, salames, copas, presuntos, entre outros. A MaturaMeat® é a primeira câmara de maturação a seco de proteínas do Brasil e a única em toda América Latina com patente registrada. Entregamos em todo o Brasil." />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="/assets/favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/globals.css" />
+		<link
+			rel="stylesheet"
+			href="../styles/index.css" />
+		<script
+			defer
+			src="index.js"></script>
+		<title>MaturaMeat - Referência em Maturação no Brasil</title>
+	</head>
+	<body>
+		<header class="header">
+			<img
+				src="../assets/MaturaMeat Logo.svg"
+				alt="MaturaMeat NavBar"
+				class="logo" />
+			<button class="hamburguer">
+				<div class="bar"></div>
+			</button>
+			<!-- 📱 Mobile NavBar 📱  -->
+			<nav class="mobile-nav is-active">
+				<ul>
+					<li class="nav-item-mobile">
+						<a
+							class="nav-anchor-mobile"
+							href="#home"
+							>HOME</a
+						>
+					</li>
+					<li class="nav-item-mobile">
+						<a
+							class="nav-anchor-mobile"
+							href="#sobre"
+							>SOBRE NÓS</a
+						>
+					</li>
+					<li class="nav-item-mobile">
+						<a
+							class="nav-anchor-mobile"
+							href="#dry-aged"
+							>CÂMARAS</a
+						>
+					</li>
+					<li class="nav-item-mobile">
+						<a
+							class="nav-anchor-mobile"
+							href="#contato"
+							>CONTATO</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<!-- 📱 Mobile NavBar 📱  -->
+			<!-- 🖥️ Desktop NavBar 🖥️  -->
+			<nav class="desktop-nav">
+				<ul>
+					<li class="nav-item">
+						<a
+							class="nav-anchor"
+							href="#home"
+							>HOME</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-anchor"
+							href="#sobre"
+							>SOBRE NÓS</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-anchor"
+							href="#dry-aged"
+							>CÂMARAS</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-anchor"
+							href="#contato"
+							>CONTATO</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<!-- 🖥️ Desktop NavBar 🖥️  -->
+		</header>
+		<main>
+			<div class="go-up-button"></div>
+			<!--✨ Page Title Section ✨ -->
+			<section class="page-title section">
+				<h1>Câmaras de maturação a seco de proteínas para dry aged, dry fish e charcutaria.</h1>
+				<br />
+				<h2>Conheça e escolha a máquina perfeita para o seu restaurante.</h2>
+				<br />
+				<a
+					class="arrow-down"
+					href="#dry-aged">
+					<svg
+						class="arrow-down"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="currentColor"
+						class="w-6 h-6">
+						<path
+							fill-rule="evenodd"
+							d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+							clip-rule="evenodd" />
+					</svg>
+				</a>
+			</section>
+			<!--✨ Page Title Section ✨ -->
 
-      <!--🥩 Product Section 🥩 -->
-      <section id="dry-aged" class="grid-center section product-section">
-        <div>
-          <h2>DRY AGED</h2>
-          <div class="product-wrapper-float">
-            <img class="float-right-image" src="../assets/stock-image.png" alt="Geladeira Dry Aged" />
-            <p>Feita para carnes em geral, mas muito utilizada hoje para bovinos, suínos e caprinos.</p>
-            <br />
-            <p>Você poderá maturar cortes de carnes para a sua butique de carnes, restaurante, empório, supermercado premium, churrascaria ou até mesmo na sua casa</p>
-            <br />
-            <p>Clique no botão abaixo, saiba mais e fale com a nossa equipe para adquirir a sua:</p>
-            <a class="anchor-main-btn dry-aged-button" href="./pages/dryaged/index.html"> Saiba mais sobre a câmara para dry aged →</a>
-          </div>
-        </div>
-      </section>
-      <!--🥩 Product Section 🥩 -->
+			<!-- 📝 Introduction Section 📝 -->
+			<section
+				id="sobre"
+				class="section section-introduction">
+				<h2>REFERÊNCIA EM<br />MATURAÇÃO NO BRASIL</h2>
+				<p>
+					MaturaMeat®
+					<br />
+					<br />
+					Produzimos equipamentos que garantem a você perfeitas condições de umidade, temperatura e ventilação durante a maturação dos seus produtos, como: carnes, peixes, embutidos, queijos, salames, copas, presuntos, entre outros. A MaturaMeat® é a primeira câmara de maturação a seco de proteínas do Brasil e a única em toda América Latina com patente registrada. Entregamos em todo o Brasil.
+				</p>
+				<br />
+				<ul class="lista-vantagens">
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Aumenta o valor agregado dos seus produtos
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Realça o sabor e melhora a textura das suas proteínas
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Garante segurança alimentar
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Reduz desperdício com perdas de produção
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Reduz gastos com mão de obra
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />572L de capacidade de armazenamento
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Controlador de temperatura
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Controlador de umidade
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Controlador de ventilação
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Ventilação com ar forçado
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Padrozinar a sua produção
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Disponível somente na cor preta
+					</li>
+					<li class="item-vantagens">
+						<img
+							src="../assets/checkbox.png"
+							class="checkbox" />Pagamento seguro
+					</li>
+				</ul>
+			</section>
+			<!-- 📝 Introduction Section 📝 -->
 
-      <!-- 🥩 Second Product Section 🥩 -->
-      <section class="dry-fish-section grid-center section fullscreen-section product-section font-size-alternated">
-        <div>
-          <div class="product-wrapper">
-            <h2>DRY FISH</h2>
-            <img class="product-image margin-auto" src="../assets/fish-stock-image.jpg" />
-            <p>
-              Idealizada para maturação de peixes. Utilizada por restaurantes de peixes e frutos do mar, izakayas, restaurantes de cozinha oriental, peixarias, boutiques do mar, empórios gourmet,
-              supermercados premium, sushi bares, temakerias, entre outros. Você pode maturar peixes inteiros ou lombos grandes. Considerada como o grande pilar da nova escola de conservação de
-              pescados.
-            </p>
-            <br />
-            <p>Clique no botão abaixo, saiba mais e fale com a nossa equipe para adquirir a sua:</p>
-            <a class="anchor-main-btn" href="./pages/dryfish/index.html"> Saiba mais sobre a câmara para dry fish →</a>
-          </div>
-        </div>
-      </section>
-      <!-- 🥩 Second Product Section 🥩 -->
+			<!--🥩 Product Section 🥩 -->
+			<section
+				id="dry-aged"
+				class="grid-center section product-section">
+				<div>
+					<h2>DRY AGE</h2>
+					<div class="product-wrapper-float">
+						<img
+							class="float-right-image"
+							src="../assets/stock-image.png"
+							alt="Geladeira Dry Aged" />
+						<p>Feita para carnes em geral, mas muito utilizada hoje para bovinos, suínos e caprinos.</p>
+						<br />
+						<p>Você poderá maturar cortes de carnes para a sua butique de carnes, restaurante, empório, supermercado premium, churrascaria ou até mesmo na sua casa</p>
+						<br />
+						<p>Clique no botão abaixo, saiba mais e fale com a nossa equipe para adquirir a sua:</p>
+						<a
+							class="anchor-main-btn dry-aged-button"
+							href="./pages/dryaged/index.html">
+							Saiba mais sobre a câmara para dry age →</a
+						>
+					</div>
+				</div>
+			</section>
+			<!--🥩 Product Section 🥩 -->
 
-      <!-- 🥩 Third Product Section 🥩 -->
-      <section class="charcutaria-section grid-center section fullscreen-section product-section font-size-alternated">
-        <div>
-          <div class="product-wrapper">
-            <h2>CHARCUTARIA</h2>
-            <img class="product-image margin-auto" src="../assets/charcutaria-stock-image.jpg" />
-            <p>
-              Feita para produtos de charcutaria e maturação de queijos. Utilizada em restaurantes, empórios, laticínios, lojas gourmet, supermercados premium e até mesmo na sua casa. Você pode
-              maturar queijos, salames, copas, presuntos, embutidos, linguiças e muitas outras preparações do mundo da charcutaria.
-            </p>
-            <br />
-            <p>Clique no botão abaixo, saiba mais e fale com a nossa equipe para adquirir a sua:</p>
-            <a class="anchor-main-btn" href="./pages/charcutaria/index.html"> Saiba mais sobre a câmara para charcutaria →</a>
-          </div>
-        </div>
-      </section>
-      <!-- 🥩 Third Product Section 🥩 -->
+			<!-- 🥩 Second Product Section 🥩 -->
+			<section class="dry-fish-section grid-center section fullscreen-section product-section font-size-alternated">
+				<div>
+					<div class="product-wrapper">
+						<h2>DRY FISH</h2>
+						<img
+							class="product-image margin-auto"
+							src="../assets/fish-stock-image.jpg" />
+						<p>Idealizada para maturação de peixes. Utilizada por restaurantes de peixes e frutos do mar, izakayas, restaurantes de cozinha oriental, peixarias, boutiques do mar, empórios gourmet, supermercados premium, sushi bares, temakerias, entre outros. Você pode maturar peixes inteiros ou lombos grandes. Considerada como o grande pilar da nova escola de conservação de pescados.</p>
+						<br />
+						<p>Clique no botão abaixo, saiba mais e fale com a nossa equipe para adquirir a sua:</p>
+						<a
+							class="anchor-main-btn"
+							href="./pages/dryfish/index.html">
+							Saiba mais sobre a câmara para dry fish →</a
+						>
+					</div>
+				</div>
+			</section>
+			<!-- 🥩 Second Product Section 🥩 -->
 
-      <!-- 🖼️ Carrousel Section 🖼️ -->
-      <section class="section carrousel-section grid-center">
-        <div class="carousel-header">
-          <h2>Nada melhor do que escutar quem já usa</h2>
-          <h3>Veja o que nossos clientes tem a dizer sobre nós:</h3>
-        </div>
-        <!-- Carousel -->
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="./assets/charcutaria-stock-image.jpg" /></div>
-            <div class="swiper-slide"><img src="./assets/charcutaria-stock-image.jpg" /></div>
-            <div class="swiper-slide"><img src="./assets/fish-stock-image.jpg" /></div>
-            ...
-          </div>
-          <!--Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Next and Prev Buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+			<!-- 🥩 Third Product Section 🥩 -->
+			<section class="charcutaria-section grid-center section fullscreen-section product-section font-size-alternated">
+				<div>
+					<div class="product-wrapper">
+						<h2>CHARCUTARIA</h2>
+						<img
+							class="product-image margin-auto"
+							src="../assets/charcutaria-stock-image.png" />
+						<p>Feita para produtos de charcutaria e maturação de queijos. Utilizada em restaurantes, empórios, laticínios, lojas gourmet, supermercados premium e até mesmo na sua casa. Você pode maturar queijos, salames, copas, presuntos, embutidos, linguiças e muitas outras preparações do mundo da charcutaria.</p>
+						<br />
+						<p>Clique no botão abaixo, saiba mais e fale com a nossa equipe para adquirir a sua:</p>
+						<a
+							class="anchor-main-btn"
+							href="./pages/charcutaria/index.html">
+							Saiba mais sobre a câmara para charcutaria →</a
+						>
+					</div>
+				</div>
+			</section>
+			<!-- 🥩 Third Product Section 🥩 -->
 
-        <!-- Carousel -->
-      </section>
-      <!-- 🖼️ Carrousel Section 🖼️ -->
+			<!-- 🖼️ Carrousel Section 🖼️ -->
+			<section class="section carrousel-section grid-center">
+				<div class="carousel-header">
+					<h2>Nada melhor do que escutar quem já usa</h2>
+					<h3>Veja o que nossos clientes tem a dizer sobre nós:</h3>
+				</div>
+				<!-- Carousel -->
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide"><img src="./assets/charcutaria-stock-image.jpg" /></div>
+						<div class="swiper-slide"><img src="./assets/charcutaria-stock-image.jpg" /></div>
+						<div class="swiper-slide"><img src="./assets/fish-stock-image.jpg" /></div>
+						...
+					</div>
+					<!--Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Next and Prev Buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
 
-      <!-- 📞 Form Section 📞 -->
-      <section id="contato" class="section form-section grid-center">
-        <h2>Fale com a Gente!</h2>
-        <p>Deixe seu nome e número de telefone para que nosso time possa entrar em contato e tirar todas as suas dúvidas.</p>
-        <form action="https://sheetdb.io/api/v1/3qk3699v7wfg7" method="post" id="sheetdb-form">
-          <label for="nome"></label>
-          <input type="text" id="nome" name="data[nome]" placeholder="Nome" />
-          <label for="tel"></label>
-          <input type="tel" id="tel" name="data[tel]" placeholder="(DDD) + Número" onkeydown="phoneNumberFormatter()" />
-          <button class="main-btn" type="submit">ENVIAR</button>
-        </form>
-        <div class="whatsapp-section">
-          <p>Se preferir, envie uma mensagem agora mesmo em nosso Whatsapp, e responderemos o mais breve possível:</p>
-          <a class="main-btn whatsapp" href="https://wa.me/5511933019166" target="_blank">
-            <img class="whatsapp-button-icon" src="./assets/whatsapp-icon.png" />
-            FALE CONOSCO</a
-          >
-        </div>
-      </section>
-      <!-- 📞 Form Section 📞 -->
-      <section class="section fullscreen-section bio-section grid-center fullscreen-section">
-        <div>
-          <h3>Com a palavra, nosso fundador:</h3>
-          <h2>SANDRO GIOVANNONE</h2>
-        </div>
-        <div class="bio-wrapper">
-          <img srcset="./assets/avatar-bio-1000.jpg 1200w, ./assets/avatar-bio-500.jpeg 500px" class="bio-pic" alt="Foto de Sandro Giovannone" />
-          <p class="bio">
-            Em 2010 eu me apaixonei por uma vitrine de carnes dry aged no aeroporto de NY. No Brasil ainda não se falava muito disso. Desenvolvi um equipamento improvisado pra fazer meus experimentos.
-            Os resultados foram ótimos, a carne se transformava, o sabor era maravilhoso. 5 anos depois entramos de cabeça na comercialização de equipamentos profissionais maturação a seco de
-            proteinas, conseguimos a primeira patente da América Latina. Hoje vendemos para todo o Brasil e queremos mais. Nossas câmaras atendem a diferentes segmentos: dry age de carnes, dry fish,
-            charcutaria e até mesmo laticinios. para Agregamos valor aos produtos dos nossos clientes, baixamos custos com desperdicio e mão de obra e garantimos segurança alimentar pra quem produz e
-            quem consome.
-          </p>
-        </div>
-      </section>
+				<!-- Carousel -->
+			</section>
+			<section class="section grid-center map-section">
+				<h2>ESTAMOS EM TODO O BRASIL</h2>
+				<h3>Confira nosso mapa de clientes</h3>
+				<p>Junte-se aos maiores na revolução da maturação a seco.</p>
+				<iframe
+					src="https://www.google.com/maps/d/embed?mid=1tvyDb4crLlDWqINlt1tZ7JxnLA4LnRE&ehbc=2E312F&amp;pb=!3"
+					width="640"
+					height="480"></iframe>
+			</section>
+			<!-- 🖼️ Carrousel Section 🖼️ -->
 
-      <footer class="section footer">
-        <img class="footer-logo" src="./assets/logo_spazio_footer.png" alt="Spazio Lab Logo" />
-        <div class="social-icons">
-          <a class="link" href="https://youtube.com/@maturameat1584" target="_blank"><img src="./assets/youtube-icon.png" alt="youtube-icon" /></a>
-          <a class="link" href="https://www.facebook.com/maturameat/" target="_blank"><img src="./assets/facebook-icon.png" alt="facebook-icon" /></a>
-          <a class="link" href="https://www.instagram.com/maturameat/" target="_blank"><img src="./assets/instagram-icon.png" alt="instagram-icon" /></a>
-        </div>
-        <p>Matura Meat® é uma empresa do grupo <a href="http://spaziolaboratorio.com.br/">Spazio Lab.</a></p>
-        <address>
-          <strong><a class="link" href="mailto:sandro@spaziolaboratorio.com.br">sandro@spaziolaboratorio.com.br</a></strong>
-        </address>
+			<!-- 📞 Form Section 📞 -->
+			<section
+				id="contato"
+				class="section form-section grid-center">
+				<h2>Fale com a Gente!</h2>
+				<p>Deixe seu nome e número de telefone para que nosso time possa entrar em contato e tirar todas as suas dúvidas.</p>
+				<form
+					action="https://sheetdb.io/api/v1/3qk3699v7wfg7"
+					method="post"
+					id="sheetdb-form">
+					<label for="nome"></label>
+					<input
+						type="text"
+						id="nome"
+						name="data[nome]"
+						placeholder="Nome" />
+					<label for="tel"></label>
+					<input
+						type="tel"
+						id="tel"
+						name="data[tel]"
+						placeholder="(DDD) + Número"
+						onkeydown="phoneNumberFormatter()" />
+					<button
+						class="main-btn"
+						type="submit">
+						ENVIAR
+					</button>
+				</form>
+				<div class="whatsapp-section">
+					<p>Se preferir, envie uma mensagem agora mesmo em nosso Whatsapp, e responderemos o mais breve possível:</p>
+					<a
+						class="main-btn whatsapp"
+						href="https://wa.me/5511933019166"
+						target="_blank">
+						<img
+							class="whatsapp-button-icon"
+							src="./assets/whatsapp-icon.png" />
+						FALE CONOSCO</a
+					>
+				</div>
+			</section>
+			<!-- 📞 Form Section 📞 -->
+			<section class="section fullscreen-section bio-section grid-center fullscreen-section">
+				<div>
+					<h3>Com a palavra, nosso fundador:</h3>
+					<h2>SANDRO GIOVANNONE</h2>
+				</div>
+				<div class="bio-wrapper">
+					<img
+						srcset="./assets/avatar-bio-1000.jpg 1200w, ./assets/avatar-bio-500.jpeg 500px"
+						class="bio-pic"
+						alt="Foto de Sandro Giovannone" />
+					<p class="bio">
+						Em 2010 eu me apaixonei por uma vitrine de carnes dry aged no aeroporto de NY. No Brasil ainda não se falava muito disso. Desenvolvi um equipamento improvisado pra fazer meus experimentos. Os resultados foram ótimos, a carne se transformava, o sabor era maravilhoso. 5 anos depois entramos de cabeça na comercialização de equipamentos profissionais maturação a seco de proteinas,
+						conseguimos a primeira patente da América Latina. Hoje vendemos para todo o Brasil e queremos mais. Nossas câmaras atendem a diferentes segmentos: dry age de carnes, dry fish, charcutaria e até mesmo laticinios. para Agregamos valor aos produtos dos nossos clientes, baixamos custos com desperdicio e mão de obra e garantimos segurança alimentar pra quem produz e quem consome.
+					</p>
+				</div>
+			</section>
 
-        <address>
-          <p>
-            <a class="link" href="tel:11933019166">(11) 93301-9166</a>
-          </p>
-          <br />
-          <a
-            class="link"
-            target="_blank"
-            href="https://www.google.com.br/maps/place/Spazio+Laboratorio/@-23.6077229,-46.6136433,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5bec6863ca25:0xfde6726b8651747e!8m2!3d-23.6077229!4d-46.6136433!16s%2Fg%2F11gd_kgkpq?coh=164777&entry=tt">
-            Rua Engenho Araci, 559 - VI. Gumercindo - São Paulo/SP</a
-          >
-        </address>
-      </footer>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  </body>
+			<footer class="section footer">
+				<img
+					class="footer-logo"
+					src="./assets/logo_spazio_footer.png"
+					alt="Spazio Lab Logo" />
+				<div class="social-icons">
+					<a
+						class="link"
+						href="https://youtube.com/@maturameat1584"
+						target="_blank"
+						><img
+							src="./assets/youtube-icon.png"
+							alt="youtube-icon"
+					/></a>
+					<a
+						class="link"
+						href="https://www.facebook.com/maturameat/"
+						target="_blank"
+						><img
+							src="./assets/facebook-icon.png"
+							alt="facebook-icon"
+					/></a>
+					<a
+						class="link"
+						href="https://www.instagram.com/maturameat/"
+						target="_blank"
+						><img
+							src="./assets/instagram-icon.png"
+							alt="instagram-icon"
+					/></a>
+				</div>
+				<p>MaturaMeat® é uma empresa do grupo <a href="http://spaziolaboratorio.com.br/">Spazio Lab.</a></p>
+				<address>
+					<strong
+						><a
+							class="link"
+							href="mailto:maturameat@gmail.com"
+							>maturameat@gmail.com</a
+						></strong
+					>
+				</address>
+
+				<address>
+					<p>
+						<a
+							class="link"
+							href="tel:11933019166"
+							>(11) 93301-9166</a
+						>
+					</p>
+					<br />
+					<a
+						class="link"
+						target="_blank"
+						href="https://www.google.com.br/maps/place/Spazio+Laboratorio/@-23.6077229,-46.6136433,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5bec6863ca25:0xfde6726b8651747e!8m2!3d-23.6077229!4d-46.6136433!16s%2Fg%2F11gd_kgkpq?coh=164777&entry=tt">
+						Rua Engenho Araci, 559 - VI. Gumercindo - São Paulo/SP</a
+					>
+				</address>
+			</footer>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	</body>
 </html>
