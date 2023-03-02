@@ -2,7 +2,7 @@
 
 .page-title {
 	line-height: 1.5;
-	background-image: url('../assets/title-section-background.png');
+	background-image: url('../assets/title-section-background.jpeg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -85,14 +85,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.float-right-image {
-	max-height: 90%;
-	margin: 0 0 0 1.5rem;
-	float: right;
-	max-width: 22rem;
-	max-height: fit-content;
 }
 
 .product-section h2 {
@@ -353,7 +345,7 @@ form input:focus {
 		font-size: 1.7rem;
 	}
 	.dry-aged-button {
-		margin: 2rem 0;
+		margin: 2rem auto;
 	}
 	.swiper {
 		max-width: 70%;
